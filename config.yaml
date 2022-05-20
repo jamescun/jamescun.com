@@ -1,0 +1,14 @@
+baseURL: https://jamescun.com/
+title: James Cunningham
+languageCode: en-gb
+params:
+  header:
+    links:
+    - name: Blog
+      href: /posts
+    - name: GitHub
+      href: https://github.com/jamescun
+    - name: Twitter
+      href: https://twitter.com/jamescun
+    - name: LinkedIn
+      href: https://www.linkedin.com/in/james-cunningham-frsa-58339113/
