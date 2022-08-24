@@ -11,4 +11,8 @@ params:
     - name: Twitter
       href: https://twitter.com/jamescun
     - name: LinkedIn
-      href: https://www.linkedin.com/in/james-cunningham-frsa-58339113/
+      href: https://www.linkedin.com/in/james-cunningham-58339113/
+markup:
+  goldmark:
+    renderer:
+      unsafe: Yes
