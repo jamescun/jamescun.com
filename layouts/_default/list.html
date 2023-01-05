@@ -1,15 +1,20 @@
 {{ define "main" }}
-<article>
-    <header>
-        <h1>{{ .Title }}</h1>
-    </header>
+<main class="list">
+	<header>
+		<h1>{{ .Title }}</h1>
+	</header>
 
-    <ul>
-    {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
-        </li>
-    {{ end }}
-    </ul>
-</article>
+	{{ range .Pages }}
+	<article class="post">
+		<header>
+			<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+			<span class="meta">Published: {{ .Date.Format "2006-01-02" }}</span>
+		</header>
+
+		<p>{{ .Summary }}</p>
+
+		<p><a href="{{ .Permalink }}">Continue reading...</a></p>
+	</article>
+	{{ end }}
+</main>
 {{ end }}

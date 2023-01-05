@@ -8,18 +8,20 @@
   <link rel="stylesheet" type="text/css" href="/style.css" />
 </head>
 <body>
-  <header>
+  <header class="main">
 		<h1><a href="/">{{ .Site.Title }}</a></h1>
-{{ range $i, $link := .Site.Params.header.links }}
-		{{ if $i }}| {{ end }}<a href="{{ $link.href }}">{{ $link.name }}</a>
-{{ end }}
+		<nav>
+			{{ range .Site.Params.header.links }}
+			<a href="{{ .href }}">{{ .name }}</a>
+			{{ end }}
+		</nav>
 	</header>
 
 	{{ block "main" . }}{{ end }}
 	{{ block "footer" . }}{{ end }}
 
 	<footer>
-		&copy; 2022 James Cunningham. <a href="https://github.com/jamescun/jamescun.com">Source</a>.
+		&copy; 2023 James Cunningham. <a href="https://github.com/jamescun/jamescun.com">Source</a>.
 	</footer>
 </body>
 </html>

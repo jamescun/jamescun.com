@@ -1,10 +1,10 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 
 {{ define "main" }}
-<article>
+<article class="post">
 	<header>
 		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		{{ .Date.Format "2006-01-02" }}
+		<span class="meta">Published: {{ .Date.Format "2006-01-02" }}</span>
 	</header>
 
 	{{ .Content }}
