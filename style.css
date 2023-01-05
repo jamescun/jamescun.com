@@ -2,24 +2,58 @@ body {
 	margin: 50px;
 	max-width: 900px;
 
-	font-size: 18px;
-	line-height: 1.4em;
+	font-size: 20px;
+	line-height: 1em;
+
+	-moz-osx-font-smoothing: grayscale;
 }
 
-a { color: #000000; }
-a:hover { color: #0066CC; }
+a { padding: 0 2px; color: #FF5833; }
+a:hover { color: #FFFFFF; background-color: #FF5833; text-decoration: none; }
 
 h1 a { text-decoration: none; }
 
-h1 { font-size: 28px; }
-h2 { font-size: 24px; }
-h3 { font-size: 20px; }
-h1, h2, h3 { line-height: 1em; font-family: sans-serif; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h1, h2, h3, h4 {
+	line-height: 1em;
+	font-family: sans-serif;
+	font-weight: 400;
+}
 
 header { line-height: 1em; }
 header, article { margin-bottom: 50px; }
 
-p { line-height: 1.6em; }
+article.post header { margin-bottom: 25px; }
+article.post header h1 { margin-bottom: 10px; }
+
+p {
+	margin-bottom: 25px;
+	color: #1A1A1A;
+	line-height: 1.6em;
+}
 
 pre { padding: 10px; background-color: #f9f9f9;}
 pre, code { font-size: 14px; line-height: 1.4em; }
+
+.meta {
+	color: #6A6A6A;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+header.main a {
+	color: #000000;
+}
+
+header.main a:hover {
+	color: #FFFFFF;
+}
+
+blockquote {
+	margin: 0 0 25px 0; padding: 10px 25px;
+
+	border-left: 4px #DADADA solid;
+}
