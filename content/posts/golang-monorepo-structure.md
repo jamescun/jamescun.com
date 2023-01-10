@@ -1,6 +1,7 @@
 ---
 title: Go Monorepos for Growing Teams
 date: 2022-08-22T21:02:16+01:00
+summary: Some thoughts on structuring Monorepos and Go Microservices.
 draft: false
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: On the looming tech downturn
 date: 2022-05-28T10:16:00+01:00
+summary: Thoughts on the looming tech downturn.
 draft: false
 ---
 

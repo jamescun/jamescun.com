@@ -35,8 +35,25 @@ p {
 	line-height: 1.6em;
 }
 
-pre { padding: 10px; background-color: #f9f9f9;}
-pre, code { font-size: 14px; line-height: 1.4em; }
+pre {
+	padding: 10px;
+	background-color: #f9f9f9;
+	border-radius: 2px;
+}
+code {
+	padding: 2px 3px;
+
+	font-size: 14px;
+	background-color: #EAEAEA;
+	border-radius: 2px;
+}
+pre code {
+	padding: 0;
+
+	line-height: 1.4em;
+	background-color: #f9f9f9;
+}
+
 
 .meta {
 	color: #6A6A6A;

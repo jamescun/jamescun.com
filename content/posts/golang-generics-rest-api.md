@@ -1,6 +1,7 @@
 ---
 title: "REST APIs with Go Generics"
 date: 2022-03-14T16:26:05+01:00
+summary: A brief guide on reducing boilerplate when writing REST APIs with Go and Generics.
 draft: false
 ---
 

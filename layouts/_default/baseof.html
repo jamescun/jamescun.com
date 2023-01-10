@@ -5,7 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+	<link rel="stylesheet" type="text/css" href="/style.css" />
+
+	<meta name="url" content="{{ .Permalink }}" />
+	<meta name="twitter:url" content="{{ .Permalink }}" />
+	<meta property="og:url" content="{{ .Permalink }}" />
+	{{ if .Summary }}<meta name="description" content="{{ .Summary }}">{{ end }}
 </head>
 <body>
   <header class="main">
