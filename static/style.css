@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
 body {
 	margin: 50px;
 	max-width: 900px;
 
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1em;
+	background-color: #F5F3EB;
+	font-family: 'Lora', serif;
 
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -19,9 +23,9 @@ h3 { font-size: 1.6em; }
 h4 { font-size: 1.4em; }
 h1, h2, h3, h4 {
 	line-height: 1em;
-	font-family: sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 }
+h1.title { font-weight: 400; }
 
 header { line-height: 1em; }
 header, article { margin-bottom: 50px; }
@@ -44,7 +48,7 @@ code {
 	padding: 2px 3px;
 
 	font-size: 14px;
-	background-color: #EAEAEA;
+	background-color: rgba(0,0,0,0.05);
 	border-radius: 2px;
 }
 pre code {

@@ -3,8 +3,8 @@
 {{ define "main" }}
 <article class="post">
 	<header>
-		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		<span class="meta">Published: {{ .Date.Format "2006-01-02" }}</span>
+		<h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<span class="meta">{{ .Date.Format "January 2006" }}</span>
 	</header>
 
 	{{ .Content }}
