@@ -42,14 +42,12 @@ h3 { font-size: 1.6em; }
 h4 { font-size: 1.4em; }
 h1, h2, h3, h4 {
 	line-height: 1em;
-	font-weight: 600;
+	font-weight: 400;
 
 	a { text-decoration: none; }
 }
 
 h1.title {
-	font-weight: 400;
-
 	a { color: $main-color; }
 	a:hover { color: $background-color; }
 }
@@ -107,9 +105,6 @@ header.main {
 		a:hover { text-decoration: underline; }
 	}
 }
-
-header.main nav a { text-decoration: underline; }
-header.main nav a:hover { text-decoration: none; }
 
 footer.main {
 	color: $meta-text-color;
